@@ -5,13 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Helmet } from 'react-helmet';
 
-const helmetContext = {};
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Helmet>
+    {/* <Helmet> */}
     <App />
-    </Helmet>
+    {/* </Helmet> */}
   </React.StrictMode>
 );
 

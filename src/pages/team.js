@@ -6,7 +6,7 @@ function Team() {
     return (
 
         <div>
-            <Helmet>
+          <Helmet>
                 <meta property="og:title" content="Vercel Og Title Team Page" />
 
                 <meta property="og:description" content="Naidu Vercel App Description for the testing Team Page" />
@@ -14,7 +14,7 @@ function Team() {
 
                 <meta property="og:url" content="https://meta-tags-pro.vercel.app/" />
                 <meta property="og:type" content="Website" />
-            </Helmet>
+            </Helmet> 
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
