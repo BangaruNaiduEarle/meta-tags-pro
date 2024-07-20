@@ -1,20 +1,27 @@
 import React, { useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import withMeta from '../components/withMeta';
 
+
+const teamMeta = {
+    title: "Vercel Og Title Home Page",
+    description: "Naidu Vercel App Description for the testing Home Page",
+    image: "https://www.shutterstock.com/image-vector/seo-meta-data-optimization-concept-260nw-2027713787.jpg",
+    url: "https://meta-tags-pro.vercel.app/",
+    type: "website"
+};
 
 function Home() {
     return (
-        <HelmetProvider>
+        // <HelmetProvider>
         <div>
-          <Helmet>
-                <meta property="og:title" content="Vercel Og Title Home Page" />
-
-                <meta property="og:description" content="Naidu Vercel App Description for the testing Home Page" />
-                <meta property="og:image" content="https://www.shutterstock.com/image-vector/seo-meta-data-optimization-concept-260nw-2027713787.jpg" />
-
-                <meta property="og:url" content="https://meta-tags-pro.vercel.app/" />
-                <meta property="og:type" content="Website" />
-            </Helmet> 
+            <Helmet>
+                <meta property="og:title" content={teamMeta.title} />
+                <meta property="og:description" content={teamMeta.description} />
+                <meta property="og:image" content={teamMeta.image} />
+                <meta property="og:url" content={teamMeta.url} />
+                <meta property="og:type" content={teamMeta.type} />
+            </Helmet>
             <section className="text-gray-600 body-font">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -33,8 +40,8 @@ function Home() {
                 </div>
             </section>
         </div>
-        </HelmetProvider>
+        // </HelmetProvider> */ }
     );
 }
 
-export default Home;
+export default withMeta(Home, teamMeta);

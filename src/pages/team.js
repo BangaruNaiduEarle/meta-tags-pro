@@ -1,16 +1,26 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import withMeta from '../components/withMeta';
 
+
+const teamMeta = {
+    title: "Vercel Og Title Team Page",
+    description: "Naidu Vercel App Description for the testing Team Page",
+    image: "https://kautilya.org.in/img/governanceExcellenceInitiativeKautilya.jpg",
+    url: "https://meta-tags-pro.vercel.app/",
+    type: "website"
+};
 function Team() {
+  
     return (
-        <HelmetProvider>
+        // <HelmetProvider>
         <div>
-            <Helmet>
-                <meta property="og:title" content="Vercel Og Title Team Page" />
-                <meta property="og:description" content="Naidu Vercel App Description for the testing Team Page" />
-                <meta property="og:image" content="https://kautilya.org.in/img/governanceExcellenceInitiativeKautilya.jpg" />
-                <meta property="og:url" content="https://meta-tags-pro.vercel.app/" />
-                <meta property="og:type" content="website" />
+        <Helmet>
+                <meta property="og:title" content={teamMeta.title} />
+                <meta property="og:description" content={teamMeta.description} />
+                <meta property="og:image" content={teamMeta.image} />
+                <meta property="og:url" content={teamMeta.url} />
+                <meta property="og:type" content={teamMeta.type} />
             </Helmet>
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
@@ -107,8 +117,8 @@ function Team() {
                 </div>
             </section>
         </div>
-        </HelmetProvider>
+        // </HelmetProvider>
     );
 }
 
-export default Team;
+export default withMeta(Team, teamMeta);
