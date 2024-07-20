@@ -1,8 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function Team() {
     return (
+        <HelmetProvider>
         <div>
             <Helmet>
                 <meta property="og:title" content="Vercel Og Title Team Page" />
@@ -106,6 +107,7 @@ function Team() {
                 </div>
             </section>
         </div>
+        </HelmetProvider>
     );
 }
 

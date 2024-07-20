@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 function Home() {
     return (
+        <HelmetProvider>
         <div>
           <Helmet>
                 <meta property="og:title" content="Vercel Og Title Home Page" />
@@ -32,6 +33,7 @@ function Home() {
                 </div>
             </section>
         </div>
+        </HelmetProvider>
     );
 }
 
