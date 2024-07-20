@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
-
 
 function Team() {
     return (
-
         <div>
-          <Helmet>
+            <Helmet>
                 <meta property="og:title" content="Vercel Og Title Team Page" />
-
                 <meta property="og:description" content="Naidu Vercel App Description for the testing Team Page" />
                 <meta property="og:image" content="https://kautilya.org.in/img/governanceExcellenceInitiativeKautilya.jpg" />
-
                 <meta property="og:url" content="https://meta-tags-pro.vercel.app/" />
-                <meta property="og:type" content="Website" />
-            </Helmet> 
+                <meta property="og:type" content="website" />
+            </Helmet>
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
-                        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+                        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
+                            Franzen you probably haven't heard of them.
+                        </p>
                     </div>
                     <div className="flex flex-wrap -m-2">
                         <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
@@ -106,9 +105,6 @@ function Team() {
                     </div>
                 </div>
             </section>
-
-
-
         </div>
     );
 }
