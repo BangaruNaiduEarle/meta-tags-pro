@@ -25,7 +25,7 @@ import { Helmet } from "react-helmet-async";
 
 const SEO = ({ title, description, image, lang = "en", meta = [], keywords = [] }) => {
   const metaDescription = description || "Default description";
-  const metaImage = image || "/default-image.jpg"; // Path to a default image
+  const metaImage = image || "https://www.shutterstock.com/image-vector/seo-meta-data-optimization-concept-260nw-2027713787.jpg"; // Path to a default image
 
   return (
     <Helmet
