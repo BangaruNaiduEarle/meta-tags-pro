@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import withMeta from '../components/withMeta';
+import SEO from '../components/withMeta';
 
 
 const teamMeta = {
@@ -11,17 +11,23 @@ const teamMeta = {
     type: "website"
 };
 function Team() {
-  
+
     return (
         // <HelmetProvider>
         <div>
-        <Helmet>
+            {/* <Helmet>
                 <meta property="og:title" content={teamMeta.title} />
                 <meta property="og:description" content={teamMeta.description} />
                 <meta property="og:image" content={teamMeta.image} />
                 <meta property="og:url" content={teamMeta.url} />
                 <meta property="og:type" content={teamMeta.type} />
-            </Helmet>
+            </Helmet> */}
+            <SEO
+                title="Vercel Og Title Team Page"
+                description="Naidu Vercel App Description for the testing TEAM Page"
+                image="https://kautilya.org.in/img/governanceExcellenceInitiativeKautilya.jpg" // Specific image for this page
+                keywords={[`gatsby`, `react`, `SEO`]}
+            />
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
@@ -121,4 +127,5 @@ function Team() {
     );
 }
 
-export default withMeta(Team, teamMeta);
+// export default withMeta(Team, teamMeta);
+export default Team;
