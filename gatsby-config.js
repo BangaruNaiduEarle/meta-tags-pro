@@ -1,8 +1,11 @@
-export const plugins = [`gatsby-plugin-react-helmet-async`];
-
-// module.exports = {
-//     plugins: [
-//       `gatsby-plugin-react-helmet-async`,
-//       // other plugins
-//     ],
-//   };
+module.exports = {
+    siteMetadata: {
+      title: `vercel App`,
+      description: `Your site description. Vercel`,
+      author: `@yourhandle`,
+    },
+    plugins: [
+        `gatsby-plugin-react-helmet-async`,
+        // other plugins
+      ],
+  };
