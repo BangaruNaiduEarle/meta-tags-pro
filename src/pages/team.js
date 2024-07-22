@@ -3,27 +3,14 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import SEO from '../components/withMeta';
 
 
-const teamMeta = {
-    title: "Vercel Og Title Team Page",
-    description: "Naidu Vercel App Description for the testing Team Page",
-    image: "https://kautilya.org.in/img/governanceExcellenceInitiativeKautilya.jpg",
-    url: "https://meta-tags-pro.vercel.app/",
-    type: "website"
-};
+
 function Team() {
 
     return (
-        // <HelmetProvider>
         <div>
-            {/* <Helmet>
-                <meta property="og:title" content={teamMeta.title} />
-                <meta property="og:description" content={teamMeta.description} />
-                <meta property="og:image" content={teamMeta.image} />
-                <meta property="og:url" content={teamMeta.url} />
-                <meta property="og:type" content={teamMeta.type} />
-            </Helmet> */}
+          
             <SEO
-                title="Vercel Og Title Team Page"
+                title="Team Page"
                 description="Naidu Vercel App Description for the testing TEAM Page"
                 image="https://kautilya.org.in/img/governanceExcellenceInitiativeKautilya.jpg" // Specific image for this page
                 keywords={[`gatsby`, `react`, `SEO`]}
@@ -123,9 +110,7 @@ function Team() {
                 </div>
             </section>
         </div>
-        // </HelmetProvider>
     );
 }
 
-// export default withMeta(Team, teamMeta);
 export default Team;

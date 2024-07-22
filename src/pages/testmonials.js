@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import SEO from '../components/withMeta';
 
 
 function Testmonials() {
   return (
+    <div>
+        <SEO
+                title="Testmonial Page"
+                description="Naidu Vercel App Description for the testing Testmonial Page"
+                image="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" 
+                keywords={[`gatsby`, `react`, `SEO`]}
+            />
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
@@ -36,6 +44,7 @@ function Testmonials() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 

@@ -3,29 +3,15 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import SEO from '../components/withMeta';
 
 
-const teamMeta = {
-    title: "Vercel Og Title Home Page",
-    description: "Naidu Vercel App Description for the testing Home Page",
-    image: "https://www.shutterstock.com/image-vector/seo-meta-data-optimization-concept-260nw-2027713787.jpg",
-    url: "https://meta-tags-pro.vercel.app/",
-    type: "website"
-};
 
 function Home() {
     return (
-        // <HelmetProvider>
         <div>
-            {/* <Helmet>
-                <meta property="og:title" content={teamMeta.title} />
-                <meta property="og:description" content={teamMeta.description} />
-                <meta property="og:image" content={teamMeta.image} />
-                <meta property="og:url" content={teamMeta.url} />
-                <meta property="og:type" content={teamMeta.type} />
-            </Helmet> */}
+           
             <SEO
-                title="Vercel Og Title Home Page"
+                title="Home Page"
                 description="Naidu Vercel App Description for the testing Home Page"
-                image="https://www.shutterstock.com/image-vector/seo-meta-data-optimization-concept-260nw-2027713787.jpg" // Specific image for this page
+                image="https://www.shutterstock.com/image-vector/seo-meta-data-optimization-concept-260nw-2027713787.jpg" 
                 keywords={[`gatsby`, `react`, `SEO`]}
             />
             <section className="text-gray-600 body-font">
@@ -46,10 +32,8 @@ function Home() {
                 </div>
             </section>
         </div>
-        // </HelmetProvider> */ }
     );
 }
 
-// export default withMeta(Home, teamMeta);
 
 export default Home;
